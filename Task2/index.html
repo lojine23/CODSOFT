@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&family=Patrick+Hand+SC&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="Header">
+        <div>
+          <a class="logo" href="#">Matcha</a>
+        </div>
+        <button class="hamburger" id="hamburger">&#9776; Menu</button> <!-- Hamburger Icon -->
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Plog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Buy Now</a></li>
+        </ul>
+        <div class="buttons">
+            <div><button>Contact me</button></div>
+         
+        </div>
+    </header>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            const buttons = document.querySelector('.buttons');
+        
+            hamburger.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+                buttons.classList.toggle('hide');
+            });
+        });
+    </script>
+
+<!--Background Imgae-->
+<div class="backgroundImg">
+</div>
+<div class="text">
+     <h1>Green Tea</h1>
+     <P>Lorem ipsum dolor, sit amet, eius aut optio, iusto veritatis sunt sit ipsam expedita tenetur debitis odio aspernatur voluptatum molestias quas tempora saepe pariatur.</P>
+     <div class="icons">
+     <i class="fab fa-instagram"></i>
+     <i class="fab fa-twitter"></i>
+     <i class="fab fa-facebook"></i>
+     <i class="fab fa-linkedin"></i>
+    </div>
+</div>
+<!--About section-->
+<div class="about_section">
+<h1>About Us</h1>
+    <div class="about_section_content">
+         <div class="History">
+            <h2>History of tea</h2>
+            Tea, one of the most popular beverages in the world,
+             has a rich and fascinating history that spans thousands of years 
+            and crosses multiple cultures. The journey of tea began
+             in ancient China and eventually spread to every corner of the globe.
+             According to legend, the emperor discovered tea when leaves from a wild tree blew into his pot of boiling water. He was intrigued by the pleasant aroma and decided to taste the infusion,
+              finding it refreshing and invigorating.
+         </div>
+         <div class="about_img">
+            <img src="GreenTea.jpg" alt="greenTea">
+         </div>
+</div>
+</div>
+<!--benefits of green tea section-->
+<div class="bigContainer">
+    <h1 style="color:  #1A5319;text-align:center;font-size: 40px;">Benefits of Tea</h1>
+<div class="container">
+    
+    <div class="benefits_one">
+        <ul>
+            <li>strong anti-oxidant<i class="fas fa-leaf"></i> </li> 
+            <li> Prevent Cancer<i class="fas fa-shield-alt"></i></li>
+            <li> Increase heart health<i class="fas fa-heart"></i> </li>
+        </ul>
+    </div>
+    <div class="Benefits_image">
+        <img src="benefits.jpg" alt="Benefits">
+    </div>
+    <div class="Benefits_two">
+        <ul>
+            <li><i class="fas fa-bone"></i> help strengthen bones</li>
+            <li><i class="fas fa-brain"></i> support memory</li>
+            <li><i class="fas fa-spa"></i> keep the youth</li>
+        </ul>
+    </div>
+</div>
+</div>
+<!--Products sections-->
+<div class="large_product_container">
+    <h1 style="text-align: center;color: #1A5319;font-size: 40px;">Green Tea Types</h1>
+  <div class="product_container">
+     <div class="product_image">
+        <h3>Gyokuro Tea</h3>
+        <img src="products/gyokuro.jpg" alt="">
+        
+     </div>
+     <div class="product_image">
+        <h3>Gemarcha Tea</h3>
+        <img src="products/gemarcha.jpg" alt="">
+     </div>
+     <div class="product_image">
+        <h3>Bancha Tea</h3>
+        <img src="products/bancha.jpg" alt="">
+     </div>
+     <div class="product_image">
+        <h3>Matcha Tea</h3>
+        <img src="products/matcha.jpg" alt="">
+     </div>
+     <div class="product_image">
+        <h3>Kukicha Tea</h3>
+        <img src="products/kukicha.jpg" alt="">
+     </div>
+     <div class="product_image">
+        <h3>Tencha Tea</h3>
+        <img src="products/tencha.jpg" alt="">
+     </div>
+  </div>
+</div>
+<!--Subscribe section-->
+<div class="subscribe_big_container">
+    <h1>Subscribe For more Info</h1>
+    <div class="subscribe_container">
+       <div class="subscribe_content">
+          <ul>
+            <li><i class="fas fa-gift"></i> Exclusive special offers</li>
+            <li><i class="fas fa-newspaper"></i> Latest news and updates</li>
+            <li><i class="fas fa-lightbulb"></i> Insider tips and tricks</li>
+          </ul>
+       </div>
+       <div class="subscribe_form">
+        <form class="subscription_form" action="#" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe Now</button>
+        </form>
+    </div>
+    </div>
+
+</div>
+<!--new section-->
+<div class="news_container">
+
+    <h1 style="text-align: center;color: #1A5319;font-size: 40px;">News About Green Tea</h1>
+    <div class="news">
+        <div class="item">
+            <img src="products/gyokuro.jpg" alt="im1">
+            <h5>Tea contains polyphenols</h5>
+            <p> a type of antioxidant linked to reduced risk of cardiovascular disease. The dominant polyphenols in green tea, called catechins, may reduce risk of some types of cancer, although evidence is limited.</p>
+        </div>
+        <div class="item">
+            <img src="products/im2.jpg" alt="im2">
+            <h5>Green and black tea</h5>
+            <p>Both green and black tea come from the same plant, but their leaves are processed differently. Green tea does not undergo oxidation like black tea does</p>
+        </div>
+        <div class="item">
+            <img src="products/im3.jpg" alt="im3">
+            <h5>Reduce blood sugar</h5>
+            <p>Fung said that green tea may help reduce blood sugar, and surprisingly, help prevent tooth decay as it naturally contains fluoride. It does not, however, meaningfully help with weight loss, she said.</p>
+        </div>
+    </div>
+</div>
+
+<!--Footer section-->
+
+<div class="footer">
+    <div class="footer_section">
+        <h2>About Us</h2>
+        <p>Learn more about our mission to bring you the finest teas from around the world.</p>
+    <h2>Quick Links</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Benefits</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Buy now</a></li>
+        <li><a href="#">Outside</a></li>
+        <li><a href="#">Inside</a></li>
+    </ul>
+  
+   </div>
+   <div class="direct_links">
+    <ul>
+    <li><i class="fab fa-facebook-f"></i> <a href="#">Facebook</a></li>
+    <li><i class="fab fa-twitter"></i><a href="#"> Twitter</a></li>
+    <li><i class="fab fa-instagram"></i><a href="#"> Instagram</a></li>
+    <li><i class="fab fa-linkedin-in"></i> <a href="#">LinkedIn</a></li>
+    </ul>
+   </div>
+
+</div>
+
+
+</body>
+</html>
